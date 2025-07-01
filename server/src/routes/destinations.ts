@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
-import { Destination } from '../types';
+import { Destination, Review } from '../types';
 
 const router = express.Router();
 
@@ -17,7 +17,38 @@ const destinations: Destination[] = [
     category: 'beach',
     bestTimeToVisit: 'April to October',
     averageCost: 1200,
-    activities: ['Beach hopping', 'Wine tasting', 'Sunset viewing', 'Photography']
+    activities: ['Beach hopping', 'Wine tasting', 'Sunset viewing', 'Photography'],
+    address: 'Santorini Island, Cyclades, Greece',
+    googlePlaceId: 'ChIJIfIOPmixnhQRbpdXOj8-Cuw',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Maria K.',
+        rating: 5,
+        text: 'Absolutely breathtaking! The sunset in Oia is something you\'ll never forget. The blue domes and white buildings create a perfect contrast against the deep blue sea.',
+        date: '2024-01-15',
+        profilePhoto: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'John D.',
+        rating: 4,
+        text: 'Beautiful island but can get very crowded during peak season. The wine tours are fantastic and the local cuisine is amazing. Would definitely visit again!',
+        date: '2024-01-10',
+        profilePhoto: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Sophie L.',
+        rating: 5,
+        text: 'A dream destination! Every corner is Instagram-worthy. The hotels carved into the cliffs offer stunning views. Don\'t miss the sunset cruise!',
+        date: '2024-01-05',
+        profilePhoto: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50',
+        source: 'google'
+      }
+    ]
   },
   {
     id: uuidv4(),
@@ -30,7 +61,29 @@ const destinations: Destination[] = [
     category: 'cultural',
     bestTimeToVisit: 'March to May, September to November',
     averageCost: 1000,
-    activities: ['Temple visits', 'Garden tours', 'Traditional tea ceremony', 'Cherry blossom viewing']
+    activities: ['Temple visits', 'Garden tours', 'Traditional tea ceremony', 'Cherry blossom viewing'],
+    address: 'Kyoto, Kyoto Prefecture, Japan',
+    googlePlaceId: 'ChIJ67_80jHI-hQRQkZgvOKTI4Q',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Takeshi M.',
+        rating: 5,
+        text: 'Kyoto is a perfect blend of ancient and modern Japan. The temples are magnificent and the traditional gardens are peaceful. Cherry blossom season is magical!',
+        date: '2024-01-20',
+        profilePhoto: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Emma R.',
+        rating: 5,
+        text: 'The most beautiful city I\'ve ever visited. Every temple tells a story, and the bamboo forest in Arashiyama is otherworldly. The tea ceremony was a highlight!',
+        date: '2024-01-18',
+        profilePhoto: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50',
+        source: 'google'
+      }
+    ]
   },
   {
     id: uuidv4(),
@@ -43,7 +96,29 @@ const destinations: Destination[] = [
     category: 'nature',
     bestTimeToVisit: 'June to September',
     averageCost: 800,
-    activities: ['Hiking', 'Lake canoeing', 'Wildlife watching', 'Mountain climbing']
+    activities: ['Hiking', 'Lake canoeing', 'Wildlife watching', 'Mountain climbing'],
+    address: 'Banff National Park, Alberta, Canada',
+    googlePlaceId: 'ChIJE0_VJqp5AwER04ixA6f0x0o',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Michael S.',
+        rating: 5,
+        text: 'Absolutely stunning! Lake Louise is like a postcard come to life. The hiking trails offer breathtaking views of the Canadian Rockies. Wildlife spotting was incredible!',
+        date: '2024-01-12',
+        profilePhoto: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Sarah W.',
+        rating: 4,
+        text: 'Nature at its finest! The turquoise lakes and snow-capped mountains create the most beautiful scenery. Perfect for outdoor enthusiasts. Can get busy in summer.',
+        date: '2024-01-08',
+        profilePhoto: 'https://images.unsplash.com/photo-1502767089025-6572583495c8?w=50',
+        source: 'google'
+      }
+    ]
   },
   {
     id: uuidv4(),
@@ -56,7 +131,29 @@ const destinations: Destination[] = [
     category: 'city',
     bestTimeToVisit: 'April to June, September to October',
     averageCost: 1500,
-    activities: ['Museum visits', 'Seine river cruise', 'Café culture', 'Shopping']
+    activities: ['Museum visits', 'Seine river cruise', 'Café culture', 'Shopping'],
+    address: 'Paris, France',
+    googlePlaceId: 'ChIJD7fiBh9u5kcRYJSMaMOCCwQ',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Pierre L.',
+        rating: 5,
+        text: 'La ville lumière never disappoints! The Louvre, Eiffel Tower, and charming cafés make it magical. The croissants and wine are exceptional. A must-visit!',
+        date: '2024-01-14',
+        profilePhoto: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Anna C.',
+        rating: 4,
+        text: 'Beautiful architecture and rich history everywhere you look. The Seine cruise at sunset was romantic. Can be crowded at popular attractions but worth it!',
+        date: '2024-01-11',
+        profilePhoto: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50',
+        source: 'google'
+      }
+    ]
   },
   {
     id: uuidv4(),
@@ -69,7 +166,29 @@ const destinations: Destination[] = [
     category: 'adventure',
     bestTimeToVisit: 'May to September',
     averageCost: 900,
-    activities: ['Inca Trail hiking', 'Historical tours', 'Photography', 'Llama spotting']
+    activities: ['Inca Trail hiking', 'Historical tours', 'Photography', 'Llama spotting'],
+    address: 'Machu Picchu, Aguas Calientes, Peru',
+    googlePlaceId: 'ChIJm_CRAEYrbUcRXTgHKEfNjKM',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Carlos R.',
+        rating: 5,
+        text: 'One of the most incredible experiences of my life! The trek is challenging but absolutely worth it. The sunrise over Machu Picchu is unforgettable. Book in advance!',
+        date: '2024-01-16',
+        profilePhoto: 'https://images.unsplash.com/photo-1511376979163-f804ddeac37f?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Lisa T.',
+        rating: 5,
+        text: 'A bucket list destination that exceeded all expectations! The history and engineering marvel of the Incas is mind-blowing. The llamas add a cute touch!',
+        date: '2024-01-09',
+        profilePhoto: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=50',
+        source: 'google'
+      }
+    ]
   }
 ];
 

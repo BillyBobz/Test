@@ -13,6 +13,19 @@ export interface Destination {
   bestTimeToVisit: string;
   averageCost: number;
   activities: string[];
+  address: string;
+  reviews: Review[];
+  googlePlaceId?: string;
+}
+
+export interface Review {
+  id: string;
+  author: string;
+  rating: number;
+  text: string;
+  date: string;
+  profilePhoto?: string;
+  source: 'google' | 'tripadvisor' | 'internal';
 }
 
 export interface Trip {
