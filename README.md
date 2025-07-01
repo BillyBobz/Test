@@ -247,7 +247,7 @@ The AI Travel Assistant will be a game-changing addition to our platform, offeri
 
 **Core AI Features:**
 - **Natural Conversations**: Chat naturally about your travel plans
-- **Smart Suggestions**: "I want a romantic weekend in Europe under $2000"
+- **Smart Suggestions**: "I want a romantic weekend in Europe under £2000"
 - **Itinerary Optimization**: "How can I improve my 5-day Tokyo trip?"
 - **Real-time Assistance**: "What should I do if it rains in Santorini?"
 - **Budget Optimization**: "Find me cheaper alternatives for this itinerary"
@@ -263,7 +263,7 @@ The AI Travel Assistant will be a game-changing addition to our platform, offeri
 User: "I'm planning a 7-day trip to Japan in spring, I love food and culture"
 AI: "Perfect! Cherry blossom season is magical. I'd recommend Tokyo (3 days) 
     for incredible food scenes, Kyoto (3 days) for temples and traditional 
-    culture, and day trip to Nara. Budget estimate: $2,500. Want me to 
+    culture, and day trip to Nara. Budget estimate: £2,500. Want me to 
     create a detailed itinerary?"
 
 User: "My current Paris itinerary feels rushed, can you help?"
