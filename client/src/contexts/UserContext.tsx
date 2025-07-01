@@ -38,7 +38,7 @@ interface ItineraryItem {
   time: string;
   activity: string;
   location: string;
-  type: 'sightseeing' | 'food' | 'activity' | 'photography' | 'transport' | 'accommodation';
+  type: 'sightseeing' | 'food' | 'activity' | 'photography' | 'transport' | 'accommodation' | 'shopping';
 }
 
 interface UserContextType {
@@ -63,13 +63,13 @@ export const useUser = () => {
 export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>({
     id: '1',
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    profileImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150',
+    name: 'Ahmed Hassan',
+    email: 'ahmed.hassan@example.com',
+    profileImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
     preferences: {
-      interests: ['photography', 'food', 'culture', 'nature'],
+      interests: ['culture', 'halal food', 'shopping', 'architecture', 'family activities'],
       travelStyle: 'mid-range',
-      preferredClimate: 'temperate',
+      preferredClimate: 'warm',
       preferredCurrency: 'GBP'
     },
     joinDate: '2023-01-15',
@@ -79,41 +79,47 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [currentTrip, setCurrentTrip] = useState<Trip | null>({
     id: '1',
-    title: 'Greece Island Hopping',
-    destination: 'Santorini',
-    startDate: '2025-06-15',
-    endDate: '2025-06-25',
-    status: 'upcoming',
-    imageUrl: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800',
+    title: 'Dubai Cultural & Shopping Experience',
+    destination: 'Dubai',
+    startDate: '2025-09-05',
+    endDate: '2025-09-12',
+    status: 'current',
+    imageUrl: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800',
     weather: {
-      temperature: 26,
-      condition: 'Sunny',
-      icon: '☀️'
+      temperature: 32,
+      condition: 'Partly Cloudy',
+      icon: '⛅'
     },
     todaysItinerary: [
       {
         time: '09:00',
-        activity: 'Visit Oia Village',
-        location: 'Oia, Santorini',
+        activity: 'Visit Sheikh Zayed Grand Mosque',
+        location: 'Abu Dhabi (Day Trip)',
         type: 'sightseeing'
       },
       {
-        time: '12:30',
-        activity: 'Lunch at Ambrosia Restaurant',
-        location: 'Oia, Santorini', 
+        time: '13:00',
+        activity: 'Halal Lunch at Al Hadheerah',
+        location: 'Al Sahra Desert Resort',
         type: 'food'
       },
       {
-        time: '15:00',
-        activity: 'Wine Tasting Tour',
-        location: 'Santo Wines Winery',
-        type: 'activity'
+        time: '16:00',
+        activity: 'Dubai Mall & Burj Khalifa',
+        location: 'Downtown Dubai',
+        type: 'shopping'
       },
       {
         time: '19:30',
-        activity: 'Sunset Photography at Castle Ruins',
-        location: 'Oia Castle, Santorini',
-        type: 'photography'
+        activity: 'Dubai Fountain Show',
+        location: 'Dubai Mall',
+        type: 'activity'
+      },
+      {
+        time: '21:00',
+        activity: 'Traditional Emirati Dinner',
+        location: 'Al Fanar Restaurant',
+        type: 'food'
       }
     ]
   });
@@ -121,21 +127,21 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [upcomingTrips, setUpcomingTrips] = useState<Trip[]>([
     {
       id: '2',
-      title: 'Tuscan Countryside',
-      destination: 'Tuscany',
-      startDate: '2025-09-10',
-      endDate: '2025-09-20',
+      title: 'Istanbul Heritage & Culture',
+      destination: 'Istanbul',
+      startDate: '2025-11-15',
+      endDate: '2025-11-25',
       status: 'upcoming',
-      imageUrl: 'https://images.unsplash.com/photo-1539650116574-75c0c6d68c6c?w=800'
+      imageUrl: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800'
     },
     {
       id: '3',
-      title: 'Japanese Cultural Tour',
-      destination: 'Kyoto',
-      startDate: '2025-11-05',
-      endDate: '2025-11-15',
+      title: 'Marrakech Family Adventure',
+      destination: 'Marrakech',
+      startDate: '2026-02-10',
+      endDate: '2026-02-20',
       status: 'upcoming',
-      imageUrl: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800'
+      imageUrl: 'https://images.unsplash.com/photo-1539650116574-75c0c6d68c6c?w=800'
     }
   ]);
 
