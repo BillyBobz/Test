@@ -87,10 +87,10 @@ interface UserPreferences {
 ## Data Sources
 
 ### Sample Data Includes
-- **User Profile**: John Doe with photography, food, culture, and nature interests
-- **Current Trip**: Greece Island Hopping with detailed Santorini itinerary
-- **Upcoming Trips**: Tuscany and Japan cultural tours
-- **Destinations**: 4 sample destinations with interest tags and climate data
+- **User Profile**: Ahmed Hassan with culture, halal food, shopping, architecture, and family activity interests
+- **Current Trip**: Dubai Cultural & Shopping Experience with detailed September itinerary
+- **Upcoming Trips**: Istanbul Heritage & Culture, and Marrakech Family Adventure
+- **Destinations**: 4 halal-friendly destinations (Istanbul, Kuala Lumpur, Marrakech, Abu Dhabi) with interest tags and climate data
 
 ### Personalization Logic
 - **Interest Filtering**: Shows destinations matching user's declared interests

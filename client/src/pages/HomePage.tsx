@@ -11,39 +11,39 @@ const HomePage: React.FC = () => {
     const allDestinations = [
       {
         id: '1',
-        name: 'Santorini',
-        country: 'Greece',
-        imageUrl: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400',
+        name: 'Istanbul',
+        country: 'Turkey',
+        imageUrl: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=400',
         rating: 4.8,
-        matchesInterests: ['photography', 'culture'],
+        matchesInterests: ['culture', 'architecture', 'halal food', 'shopping'],
         climate: 'warm'
       },
       {
         id: '2',
-        name: 'Kyoto',
-        country: 'Japan',
-        imageUrl: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400',
-        rating: 4.9,
-        matchesInterests: ['culture', 'food'],
-        climate: 'temperate'
+        name: 'Kuala Lumpur',
+        country: 'Malaysia',
+        imageUrl: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400',
+        rating: 4.7,
+        matchesInterests: ['culture', 'halal food', 'shopping', 'family activities'],
+        climate: 'warm'
       },
       {
         id: '3',
-        name: 'Banff National Park',
-        country: 'Canada',
-        imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400',
-        rating: 4.7,
-        matchesInterests: ['nature', 'photography'],
-        climate: 'cold'
+        name: 'Marrakech',
+        country: 'Morocco',
+        imageUrl: 'https://images.unsplash.com/photo-1539650116574-75c0c6d68c6c?w=400',
+        rating: 4.6,
+        matchesInterests: ['culture', 'architecture', 'shopping'],
+        climate: 'warm'
       },
       {
         id: '4',
-        name: 'Tuscany',
-        country: 'Italy',
-        imageUrl: 'https://images.unsplash.com/photo-1539650116574-75c0c6d68c6c?w=400',
-        rating: 4.6,
-        matchesInterests: ['food', 'culture', 'photography'],
-        climate: 'temperate'
+        name: 'Abu Dhabi',
+        country: 'UAE',
+        imageUrl: 'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=400',
+        rating: 4.9,
+        matchesInterests: ['culture', 'architecture', 'family activities', 'shopping'],
+        climate: 'warm'
       }
     ];
 
@@ -73,6 +73,9 @@ const HomePage: React.FC = () => {
       case 'sightseeing': return '🏛️';
       case 'photography': return '📸';
       case 'activity': return '🎯';
+      case 'shopping': return '🛍️';
+      case 'transport': return '🚗';
+      case 'accommodation': return '🏨';
       default: return '📍';
     }
   };
