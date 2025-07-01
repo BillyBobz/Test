@@ -14,7 +14,7 @@ const trips: Trip[] = [
     destinations: ['santorini', 'mykonos', 'crete'],
     startDate: '2025-06-15',
     endDate: '2025-06-25',
-    budget: 3000,
+    budget: 3000, // £3,000
     status: 'planning',
     itinerary: [],
     createdAt: new Date().toISOString(),
