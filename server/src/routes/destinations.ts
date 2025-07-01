@@ -16,7 +16,7 @@ const destinations: Destination[] = [
     coordinates: { lat: 36.3932, lng: 25.4615 },
     category: 'beach',
     bestTimeToVisit: 'April to October',
-    averageCost: 1200,
+    averageCost: 1200, // £1,200
     activities: ['Beach hopping', 'Wine tasting', 'Sunset viewing', 'Photography'],
     address: 'Santorini Island, Cyclades, Greece',
     googlePlaceId: 'ChIJIfIOPmixnhQRbpdXOj8-Cuw',
@@ -60,7 +60,7 @@ const destinations: Destination[] = [
     coordinates: { lat: 35.0116, lng: 135.7681 },
     category: 'cultural',
     bestTimeToVisit: 'March to May, September to November',
-    averageCost: 1000,
+    averageCost: 1000, // £1,000
     activities: ['Temple visits', 'Garden tours', 'Traditional tea ceremony', 'Cherry blossom viewing'],
     address: 'Kyoto, Kyoto Prefecture, Japan',
     googlePlaceId: 'ChIJ67_80jHI-hQRQkZgvOKTI4Q',
@@ -95,7 +95,7 @@ const destinations: Destination[] = [
     coordinates: { lat: 51.4968, lng: -115.9281 },
     category: 'nature',
     bestTimeToVisit: 'June to September',
-    averageCost: 800,
+    averageCost: 800, // £800
     activities: ['Hiking', 'Lake canoeing', 'Wildlife watching', 'Mountain climbing'],
     address: 'Banff National Park, Alberta, Canada',
     googlePlaceId: 'ChIJE0_VJqp5AwER04ixA6f0x0o',
@@ -130,7 +130,7 @@ const destinations: Destination[] = [
     coordinates: { lat: 48.8566, lng: 2.3522 },
     category: 'city',
     bestTimeToVisit: 'April to June, September to October',
-    averageCost: 1500,
+    averageCost: 1500, // £1,500
     activities: ['Museum visits', 'Seine river cruise', 'Café culture', 'Shopping'],
     address: 'Paris, France',
     googlePlaceId: 'ChIJD7fiBh9u5kcRYJSMaMOCCwQ',
@@ -165,7 +165,7 @@ const destinations: Destination[] = [
     coordinates: { lat: -13.1631, lng: -72.5450 },
     category: 'adventure',
     bestTimeToVisit: 'May to September',
-    averageCost: 900,
+    averageCost: 900, // £900
     activities: ['Inca Trail hiking', 'Historical tours', 'Photography', 'Llama spotting'],
     address: 'Machu Picchu, Aguas Calientes, Peru',
     googlePlaceId: 'ChIJm_CRAEYrbUcRXTgHKEfNjKM',
