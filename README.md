@@ -274,7 +274,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog & Version History
 
-### Version 1.0.0 - Initial Release (January 2024)
+### Version 1.0.0 - Initial Release (July 2024)
 
 #### 🎉 Core Features Implemented
 - **Project Setup & Architecture**
@@ -410,7 +410,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### Upcoming Features (Version 1.1.0)
+### Upcoming Features (Version 1.1.0 - August 2024)
 - [ ] Enhanced itinerary system with drag-and-drop planning
 - [ ] Real-time weather API integration
 - [ ] Google Places API for live reviews
@@ -422,7 +422,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Offline functionality
 - [ ] Multi-language support
 
-### Future Roadmap (Version 2.0.0+)
+### Future Roadmap (Version 2.0.0+ - Q4 2024)
 - [ ] React Native mobile app
 - [ ] AI-powered trip recommendations
 - [ ] Currency conversion and budget tracking
