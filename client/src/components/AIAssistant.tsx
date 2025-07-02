@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, Send, Bot, User, Sparkles, MapPin, Clock, DollarSign } from 'lucide-react';
+import { Send, Bot, User, Sparkles } from 'lucide-react';
 import axios from 'axios';
 
 /**

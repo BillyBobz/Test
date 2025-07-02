@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bot, Sparkles, MessageCircle, TrendingUp, MapPin, Calendar, DollarSign, Users } from 'lucide-react';
+import { Bot, Sparkles, MessageCircle, TrendingUp, MapPin, DollarSign, Users } from 'lucide-react';
 import AIAssistant from '../components/AIAssistant';
 
 /**

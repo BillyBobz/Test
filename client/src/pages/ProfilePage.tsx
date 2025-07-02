@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Settings, MapPin, Heart, Briefcase } from 'lucide-react';
+import { Settings, MapPin, Heart, Briefcase } from 'lucide-react';
 
 const ProfilePage: React.FC = () => {
   const user = {

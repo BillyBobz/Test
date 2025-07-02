@@ -5,6 +5,7 @@ import DirectionsSection from '../components/DirectionsSection';
 
 const DestinationDetailPage: React.FC = () => {
   const { id } = useParams();
+  console.log('Destination ID:', id); // Using the id parameter
 
   // Mock destination data - in real app this would come from API
   const destination = {

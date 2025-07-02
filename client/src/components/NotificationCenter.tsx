@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Bell, X, Check, AlertCircle, Cloud, Calendar, Users, Bot } from 'lucide-react';
 import axios from 'axios';
 
@@ -32,13 +32,7 @@ const NotificationCenter: React.FC<NotificationCenterProps> = ({ userId, isOpen,
   const [unreadCount, setUnreadCount] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    if (isOpen) {
-      fetchNotifications();
-    }
-  }, [isOpen, userId]);
-
-  const fetchNotifications = async () => {
+  const fetchNotifications = useCallback(async () => {
     setLoading(true);
     try {
       const response = await axios.get(`/api/notifications/user/${userId}`);
@@ -51,7 +45,13 @@ const NotificationCenter: React.FC<NotificationCenterProps> = ({ userId, isOpen,
     } finally {
       setLoading(false);
     }
-  };
+  }, [userId]);
+
+  useEffect(() => {
+    if (isOpen) {
+      fetchNotifications();
+    }
+  }, [isOpen, userId, fetchNotifications]);
 
   const markAsRead = async (notificationId: string) => {
     try {

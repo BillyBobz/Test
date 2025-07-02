@@ -124,7 +124,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
     ]
   });
 
-  const [upcomingTrips, setUpcomingTrips] = useState<Trip[]>([
+  const [upcomingTrips] = useState<Trip[]>([
     {
       id: '2',
       title: 'Istanbul Heritage & Culture',
