@@ -189,6 +189,59 @@ const destinations: Destination[] = [
         source: 'google'
       }
     ]
+  },
+  {
+    id: uuidv4(),
+    name: 'Dubai',
+    country: 'United Arab Emirates',
+    description: 'A modern metropolis blending traditional Islamic culture with cutting-edge architecture, luxury shopping, and world-class dining. Perfect for halal-conscious travelers.',
+    imageUrl: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800',
+    rating: 4.8,
+    coordinates: { lat: 25.2048, lng: 55.2708 },
+    category: 'city',
+    bestTimeToVisit: 'November to March, September is ideal for early autumn weather',
+    averageCost: 1800, // £1,800 for 8 days
+    activities: ['Desert safari', 'Burj Khalifa visit', 'Gold Souk shopping', 'Traditional dhow cruise', 'Islamic heritage tours', 'Halal fine dining'],
+    address: 'Dubai, United Arab Emirates',
+    googlePlaceId: 'ChIJRcbZaklDXz4RYlEphFBu5r0',
+    reviews: [
+      {
+        id: uuidv4(),
+        author: 'Ahmed Hassan',
+        rating: 5,
+        text: 'Perfect destination for Muslim travelers! September weather was ideal - not too hot. Sheikh Zayed Grand Mosque was breathtaking, and the halal dining options are incredible. Al Fanar Restaurant serves authentic Emirati cuisine. Jumeirah Al Seef hotel was excellent with prayer facilities.',
+        date: '2025-09-15',
+        profilePhoto: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50',
+        source: 'internal'
+      },
+      {
+        id: uuidv4(),
+        author: 'Fatima Al-Zahra',
+        rating: 5,
+        text: 'Dubai exceeded all expectations! The blend of modern luxury and Islamic heritage is perfect. Desert safari with halal BBQ was amazing. IMG Worlds of Adventure is great for families. Prayer facilities are available everywhere.',
+        date: '2025-08-20',
+        profilePhoto: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Omar K.',
+        rating: 4,
+        text: 'Fantastic city with something for everyone. The Gold and Spice Souks are must-visits. Burj Khalifa views are spectacular. September is perfect timing - weather is getting comfortable. Highly recommend for cultural experiences.',
+        date: '2025-09-10',
+        profilePhoto: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50',
+        source: 'google'
+      },
+      {
+        id: uuidv4(),
+        author: 'Sarah M.',
+        rating: 5,
+        text: 'Dubai is a marvel of modern engineering while respecting traditions. The Dubai Mall is enormous, and the fountain show is magical. Halal food options are abundant and delicious. Very family-friendly destination.',
+        date: '2025-09-05',
+        profilePhoto: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50',
+        source: 'tripadvisor'
+      }
+    ]
   }
 ];
 

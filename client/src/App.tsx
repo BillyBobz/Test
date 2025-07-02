@@ -9,6 +9,7 @@ import DestinationDetailPage from './pages/DestinationDetailPage';
 import TripsPage from './pages/TripsPage';
 import TripDetailPage from './pages/TripDetailPage';
 import ProfilePage from './pages/ProfilePage';
+import AIAssistantPage from './pages/AIAssistantPage';
 import './App.css';
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/trips" element={<TripsPage />} />
                 <Route path="/trips/:id" element={<TripDetailPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/ai-assistant" element={<AIAssistantPage />} />
               </Routes>
             </main>
           </div>
