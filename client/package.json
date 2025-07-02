@@ -18,7 +18,10 @@
     "date-fns": "^2.29.0",
     "lucide-react": "^0.263.0",
     "react-hook-form": "^7.43.0",
-    "react-query": "^3.39.0"
+    "react-query": "^3.39.0",
+    "socket.io-client": "^4.7.0",
+    "react-hot-toast": "^2.4.0",
+    "framer-motion": "^10.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
